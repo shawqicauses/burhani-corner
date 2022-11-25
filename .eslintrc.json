@@ -29,6 +29,7 @@
     "react/jsx-filename-extension": ["error", {"extensions": [".js", ".jsx"]}],
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
     "jsx-a11y/label-has-associated-control": [
       "error",
       {"required": {"some": ["nesting", "id"]}}
