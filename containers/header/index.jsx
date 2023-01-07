@@ -37,8 +37,10 @@ export default function Header() {
             architectural solutions and decorative ideas that not only fit the
             design concept.
           </p>
-          <button
-            type="button"
+          <a
+            href="./burhani-profile.pdf"
+            target="blank"
+            download="burhani-profile"
             className={classes(
               "mt-10 flex cursor-pointer items-center justify-center gap-3 py-5 px-8 transition-all",
               "rounded-md bg-primary text-base font-medium leading-none text-white outline-none md:text-lg",
@@ -50,7 +52,7 @@ export default function Header() {
               className={classes("h-6 w-6 stroke-current")}
             />
             <span>Company Profile</span>
-          </button>
+          </a>
         </div>
       </div>
     </header>

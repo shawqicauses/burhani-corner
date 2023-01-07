@@ -46,17 +46,55 @@ export default function Footer() {
             "grid grid-cols-1 items-start justify-between gap-10",
             "w-full md:grid-cols-2 lg:grid-cols-4 lg:gap-20"
           )}>
-          <Link href="/">
-            <a
-              href="#place-holder"
-              className={classes(
-                "flex flex-col items-start justify-center gap-5 text-zinc-900",
-                "text-base font-medium uppercase leading-none tracking-widest"
-              )}>
-              <Logo />
-              Burhani Corner
-            </a>
-          </Link>
+          <div className={classes("flex flex-col items-start justify-start")}>
+            <Link href="/">
+              <a
+                href="#place-holder"
+                className={classes(
+                  "flex flex-col items-start justify-center gap-5 text-zinc-900",
+                  "mb-5 text-base font-medium uppercase leading-none tracking-widest"
+                )}>
+                <Logo />
+                Burhani Corner
+              </a>
+            </Link>
+            <div className={classes("flex items-center justify-center gap-3")}>
+              <a href="#facebook" className={classes("text-zinc-400")}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  className={classes("w-5 fill-current")}>
+                  <path
+                    d={[
+                      "M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56",
+                      "89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36",
+                      "51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                    ].join(".")}
+                  />
+                </svg>
+              </a>
+              <a href="#instagram" className={classes("text-zinc-400")}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  className={classes("w-5 fill-current")}>
+                  <path
+                    d={[
+                      "M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93",
+                      "34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90",
+                      "8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+                    ].join(".")}
+                  />
+                  <path
+                    d={[
+                      "M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256",
+                      "74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+                    ].join(" ")}
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
           {data.map((dataItem) => {
             return (
               <div
@@ -96,17 +134,27 @@ export default function Footer() {
         <hr className={classes("w-full border border-zinc-100")} />
         <div
           className={classes(
-            "flex flex-col items-start justify-between gap-5",
+            "flex flex-col items-start justify-center gap-5",
             "w-full md:flex-row md:items-center lg:gap-10"
           )}>
-          <div className={classes("flex items-center justify-center")}>
+          <div className={classes("flex flex-col items-center justify-center")}>
             <p
               className={classes(
-                "mr-5 flex items-center justify-start gap-5 text-zinc-400",
+                "mb-3 text-base font-medium leading-none",
+                "uppercase tracking-widest text-zinc-400"
+              )}>
+              &copy; 2022 - All Rights Reserved
+            </p>
+            <p
+              className={classes(
+                "flex items-center justify-start gap-5 text-zinc-400",
                 "text-base font-medium uppercase leading-none tracking-widest"
               )}>
               Developed By
-              <a href="https://omq.digital" className={classes("w-10")}>
+              <a
+                href="https://omq.digital"
+                target="blank"
+                className={classes("w-7")}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 221.11 381.59"
@@ -134,44 +182,7 @@ export default function Footer() {
                   <polygon points="21.53 59.41 44.91 80.34 68.28 59.41 46.38 39.8 67.46 20.93 44.08 0 20.7 20.93 42.61 40.54 21.53 59.41" />
                 </svg>
               </a>
-              All Rights Reserved
             </p>
-          </div>
-          <div className={classes("flex items-center justify-center gap-5")}>
-            <a href="#facebook" className={classes("text-zinc-400")}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className={classes("w-7 fill-current")}>
-                <path
-                  d={[
-                    "M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56",
-                    "89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36",
-                    "51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
-                  ].join(".")}
-                />
-              </svg>
-            </a>
-            <a href="#instagram" className={classes("text-zinc-400")}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                className={classes("w-7 fill-current")}>
-                <path
-                  d={[
-                    "M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93",
-                    "34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90",
-                    "8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
-                  ].join(".")}
-                />
-                <path
-                  d={[
-                    "M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256",
-                    "74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
-                  ].join(" ")}
-                />
-              </svg>
-            </a>
           </div>
         </div>
       </div>
